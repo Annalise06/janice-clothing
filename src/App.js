@@ -1,6 +1,4 @@
-import CardItem from './card-items/card-item.component';
-
-import './App.scss';
+import Directory from "./components/directory/directory.component";
 
 const App = () => {
   const Card = [
@@ -32,13 +30,7 @@ const App = () => {
 ];
 
   return (
-    <div className="categories-container">
-      {Card.map(( cards ) => (
-        <CardItem key={cards.id} cards={cards} />
-      ))}
-      
-
-    </div>
+    <Directory Card={Card} />
   );
 }
 
